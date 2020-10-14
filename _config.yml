@@ -2,7 +2,7 @@
 title: Про Swift. Українською. # site title
 description: >- # site description
   swift.org.ua – це спільнота для обміну інженерним досвідом. Тут можна знайти книгу про Swift українською: <a href="https://book.swift.org.ua/" target="_blank">book.swift.org.ua/</a>
-lang: en-US # default lang
+lang: uk_UA # default lang
 timezone: Europe/Kyiv # set your timezone
 image: /assets/img/swift_logo.png # This image used for Open Graph more info https://ogp.me/
 repo: https://github.com/swiftbookua/site # site repo [optional]
@@ -60,7 +60,7 @@ jekyll_compose:
     description:
 
 # Homepage limit posts
-number_of_posts: 5
+number_of_posts: 20
 
 # Build settings
 # theme: klise

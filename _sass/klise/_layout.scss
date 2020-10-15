@@ -179,6 +179,43 @@
   }
 }
 
+// Site
+.site {
+  margin-top: 6.3rem;
+  margin-bottom: 7.2rem;
+  text-align: center;
+
+  @include media-query($on-mobile) {
+    margin-bottom: 3em;
+  }
+
+  .site-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    user-select: none;
+    background-color: $black;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -webkit-animation: 0.5s ease-in forwards fadein;
+    animation: 0.5s ease-in forwards fadein;
+    opacity: 1;
+    float:left;
+    margin-right: 10px;
+  }
+
+  .site-title {
+    font-size: 3.0em;
+    margin-bottom: 2px;
+  }
+  .site-description {
+    margin: 0 auto;
+    opacity: 0.9;
+    max-width: 393px;
+    line-height: 1.688;
+  }
+}
+
 // Author
 .author {
   margin-top: 6.3rem;

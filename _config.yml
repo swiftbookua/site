@@ -1,5 +1,5 @@
 # Site settings
-title: Про Swift. Українською. # site title
+title: Про Swift. Українською # site title
 description: >- # site description
   swift.org.ua – це спільнота для обміну інженерним досвідом. Тут можна знайти книгу про Swift українською: <a href="https://book.swift.org.ua/" target="_blank">book.swift.org.ua/</a>
 lang: uk_UA # default lang

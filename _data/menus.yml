@@ -1,12 +1,12 @@
-- title: home
+- title: головна
   url: /
   external: false
 
-- title: archive
+- title: статті
   url: /archive/
   external: false
 
-- title: about
+- title: про нас
   url: /about/
   external: false # set true if you using external link, see below
 

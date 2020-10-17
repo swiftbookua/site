@@ -10,7 +10,7 @@ mode: dark # default theme "dark" | "light"
 
 # Profile settings  
 author:
-  name: Славік Володько # author nameи
+  name: Славік Володько # author name
   bio: >- # tell to the world
     Вітаю! Я <a href="http://facebook.com/killobatt" target="_blank">Славік Володько</a>, займаюсь iOS-розробкою з 2011, 
     нині працюю в <a href="http://grammarly.com/" target="_blank">Grammarly</a>. Хтось міг мене бачити на CocoaHeads Ukraine. 

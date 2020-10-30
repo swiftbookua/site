@@ -23,15 +23,23 @@ comments: false
                     </a>
                 </h2>
                 <div>
+                    {%- if community.facebook -%}
                     <a href="{{ community.facebook }}" target="_blank">
                         <img class="community-social" src="/assets/img/social/facebook-28.png">
                     </a>
+                    {%- endif -%}
+
+                    {%- if community.telegram -%}
                     <a href="{{ community.telegram }}" target="_blank">
                         <img class="community-social" src="/assets/img/social/telegram-28.png">
                     </a>
+                    {%- endif -%}
+
+                    {%- if community.youtube -%}
                     <a href="{{ community.youtube }}" target="_blank">
                         <img class="community-social" src="/assets/img/social/youtube-28.png">
                     </a>
+                    {%- endif -%}
                 </div>
                 <p>
                     {{ community.bio }}

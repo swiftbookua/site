@@ -414,3 +414,20 @@
     background-color: rgba(128, 128, 128, 0.1);
   }
 }
+
+.community-item {
+  clear:left;
+  &__image {
+    width: 180px;
+    margin: 12px 30px 30px 0;
+    float: left;
+  }
+  &__text {
+    display: inline;
+  }
+}
+
+.community-social {
+    width: 28px;
+    margin: 0px 0px 0px 5px;
+}

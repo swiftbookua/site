@@ -1,0 +1,68 @@
+---
+title: Спільноти
+permalink: /communities/
+layout: page
+excerpt: Українські спільноти iOS/macOS-інженерів.
+comments: false
+---
+
+<div>
+    {%- assign communities = site.data.communities -%}
+    {%- if communities %}
+        {%- for community in communities -%} 
+
+        <div class="community-item">
+            <a href="{{ community.url }}" target="_blank">
+                <img class="community-item__image" src="/{{ community.image }}"/>
+            </a>
+
+            <div class="container__text">
+                <h2 class="title">
+                    <a href="{{ community.url }}" target="_blank">
+                        {{ community.title }}
+                    </a>
+                </h2>
+                <div>
+                    {%- if community.facebook -%}
+                    <a href="{{ community.facebook }}" target="_blank">
+                        <img class="community-social" src="/assets/img/social/facebook-28.png">
+                    </a>
+                    {%- endif -%}
+
+                    {%- if community.telegram -%}
+                    <a href="{{ community.telegram }}" target="_blank">
+                        <img class="community-social" src="/assets/img/social/telegram-28.png">
+                    </a>
+                    {%- endif -%}
+
+                    {%- if community.youtube -%}
+                    <a href="{{ community.youtube }}" target="_blank">
+                        <img class="community-social" src="/assets/img/social/youtube-28.png">
+                    </a>
+                    {%- endif -%}
+                </div>
+                <p>
+                    {{ community.bio }}
+                </p>
+            </div>
+        </div>
+        
+
+        <!-- {%- if url == community.url -%}
+            <a class="menu-link active" href="{{ menu.url }}">{{ menu.title }}</a>
+        {%- else -%} 
+            {%- if menu.external -%}
+            <a
+                class="menu-link"
+                href="{{ menu.url }}"
+                target="_blank"
+                rel="noopener"
+                >{{ menu.title }}</a
+            >
+            {%- else -%}
+            <a class="menu-link" href="{{ menu.url }}">{{ menu.title }}</a>
+            {%- endif -%} 
+        {%- endif -%}  -->
+        {%- endfor -%}
+    {%- endif -%}
+</div>

@@ -39,6 +39,7 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   syntax_highlighter: rouge
+  math_engine: katex
 
 # Default front matter
 defaults:

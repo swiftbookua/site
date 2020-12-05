@@ -7,7 +7,7 @@
             {%- if author.nickname == nickname -%}
 
             <div class="community-item">
-                <a href="{{ author.name }}" target="_blank">
+                <a href="{{ author.nickname }}">
                     <img class="community-item__image" src="{{ author.image }}"/>
                 </a>
 
@@ -67,8 +67,8 @@
                             <div>
                             <h3 class="title">
                             <a href="{{ post.url }}">
-                                <img src="{{ site.baseurl }}/{{ post.logo }}"/>
                                 {{ post.title | escape }}
+                                <img src="{{ site.baseurl }}/{{ post.logo }}"/>
                             </a>
                             </h3>
                             {{ post.excerpt | markdownify }}

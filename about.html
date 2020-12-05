@@ -12,7 +12,7 @@ comments: false
         {%- for author in authors -%} 
 
         <div class="community-item">
-            <a href="{{ author.name }}" target="_blank">
+            <a href="{{ site.url }}/authors/{{ author.nickname }}">
                 <img class="community-item__image" src="{{ author.image }}"/>
             </a>
 

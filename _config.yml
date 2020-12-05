@@ -68,11 +68,6 @@ number_of_posts: 20
 sass:
   style: compressed
 
-collections:
-  authors:
-    output: true
-    permalink: /:authors/:nickname
-
 # mermaid:
 #   custom: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
 

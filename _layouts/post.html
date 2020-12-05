@@ -71,7 +71,13 @@ layout: compress
               {{ page.date | date: "%d.%m.%Y" }}
             </time>
             <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-              <span itemprop="name">{{ site.author.name }}</span>
+                {% for author in site.data.authors %}
+                    {% if author.nickname == page.author %}
+                        <a href="{{ site.url }}/authors/{{ author.nickname }}">
+                            <span itemprop="name">{{ author.name }}</span>
+                        </a>
+                    {% endif %}
+                {% endfor %}
             </span>
             <time hidden datetime="{{ page.modified | date_to_xmlschema }}" itemprop="dateModified">
               {{ page.date | date: "%d.%m.%Y" }}

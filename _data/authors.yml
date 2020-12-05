@@ -1,0 +1,29 @@
+- nickname: killobatt
+  name: Славік Володько
+  image: /assets/img/killobatt.jpg
+  bio: >- # tell to the world
+    Я займаюсь iOS-розробкою з 2011, нині працюю в <a href="http://grammarly.com/" target="_blank">Grammarly</a>. Хтось міг мене бачити на CocoaHeads Ukraine. 
+    Також я переклав книгу "The Swift Programming Language" українською: <a href="https://book.swift.org.ua/" target="_blank">book.swift.org.ua/</a>.
+  message: >-
+    Мене звати Славік Володько. 
+    Я iOS-інженер, і я вважаю, що у світі існує замало місць, де можна поговорити про Swift зокрема та про інженерію взагалі. 
+    Українською. Це дивно, адже довкола мене є багато чудових інженерів, яким є що розповісти про розробку. Але ми будемо це виправляти. Разом. 
+    <br/>
+
+    Якщо ви хочете долучитись до цього блогу, надсилайте статті у форматі markdown (+ mermaid) на <a href="mailto:killobatt@gmail.com">killobatt@gmail.com</a>, 
+    чи стукайте мені в Telegram: <a href="https://t.me/killobatt">killobatt</a>.
+  github: killobatt # github username
+  twitter: http://twitter.com/killobatt # twitter username
+  facebook: http://facebook.com/killobatt # facebook username  
+  email: killobatt@gmail.com # email adress
+  linkedin: https://www.linkedin.com/in/killobatt/
+  telegram: https://t.me/killobatt
+
+- nickname: rmncv
+  name: Денис Румянцев
+  image: /assets/img/rmncv.jpg
+  bio: >-
+    Займаюся iOS розробкою більше 6 років, наразі працюю iOS Team Lead над продуктом Hily в компанії appflame. В мене кльовий кіт)
+  github: rmncv
+  email: denisrumiantsev@gmail.com
+  linkedin: https://www.linkedin.com/in/denys-rumiantsev-48958987/

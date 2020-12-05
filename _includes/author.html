@@ -1,9 +1,83 @@
-<div class="author">
-  <img
-    class="author-avatar"
-    src="{{ site.author.avatar }}"
-    alt="{{ site.author.username }}"
-  />
-  <h2 class="author-name">{{ site.author.name }}</h2>
-  <p class="author-bio">{{ site.author.bio }}</p>
+<div>
+    {%- assign nickname = page.url | split: "/" | last -%}
+    {%- assign authors = site.data.authors -%}
+    {%- if authors %}
+        {%- for author in authors -%} 
+
+            {%- if author.nickname == nickname -%}
+
+            <div class="community-item">
+                <a href="{{ author.name }}" target="_blank">
+                    <img class="community-item__image" src="{{ author.image }}"/>
+                </a>
+
+                <div class="container__text">
+                    <h2 class="title">
+                        <a href="{{ site.url }}/authors/{{ author.nickname }}">
+                            {{ author.name }}
+                        </a>
+                    </h2>
+                    <div>
+                        {%- if author.facebook -%}
+                        <a href="{{ author.facebook }}" target="_blank">
+                            <img class="community-social" src="/assets/img/social/facebook-28.png">
+                        </a>
+                        {%- endif -%}
+
+                        {%- if author.telegram -%}
+                        <a href="{{ author.telegram }}" target="_blank">
+                            <img class="community-social" src="/assets/img/social/telegram-28.png">
+                        </a>
+                        {%- endif -%}
+
+                        {%- if author.github -%}
+                        <a href="https://github.com/{{ author.github }}" target="_blank">
+                            <img class="community-social" src="/assets/img/social/github-dark-28px.png">
+                        </a>
+                        {%- endif -%}
+
+                        {%- if author.linkedin -%}
+                        <a href="{{ author.linkedin }}" target="_blank">
+                            <img class="community-social" src="/assets/img/social/linkedin-28px.png">
+                        </a>
+                        {%- endif -%}
+
+                        {%- if author.email -%}
+                        <a href="mailto:{{ author.email }}" target="_blank">
+                            <img class="community-social" src="/assets/img/social/email.svg">
+                        </a>
+                        {%- endif -%}
+                    </div>
+                    <p>
+                        {{ author.message }}
+                    </p>
+                </div>
+            </div>
+            <br/>
+            <div>
+                {{ author.bio }}
+            </div>
+            <br/>
+            <br/>
+            <h3>Статті</h3>
+            <div>
+                {%- for post in site.posts -%}
+                    {%- if post.author == nickname -%}
+                        <article class="post-item">
+                            <div>
+                            <h3 class="title">
+                            <a href="{{ post.url }}">
+                                <img src="{{ site.baseurl }}/{{ post.logo }}"/>
+                                {{ post.title | escape }}
+                            </a>
+                            </h3>
+                            {{ post.excerpt | markdownify }}
+                            </div>
+                        </article>
+                    {%- endif -%}
+                {%- endfor -%}
+            </div>
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endif -%}
 </div>

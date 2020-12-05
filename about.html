@@ -1,0 +1,63 @@
+---
+title: Про нас
+permalink: /about/
+layout: page
+excerpt: Автори swift.org.ua
+comments: false
+---
+
+<div>
+    {%- assign authors = site.data.authors -%}
+    {%- if authors %}
+        {%- for author in authors -%} 
+
+        <div class="community-item">
+            <a href="{{ author.name }}" target="_blank">
+                <img class="community-item__image" src="{{ author.image }}"/>
+            </a>
+
+            <div class="container__text">
+                <h2 class="title">
+                    <a href="{{ site.url }}/authors/{{ author.nickname }}">
+                        {{ author.name }}
+                    </a>
+                </h2>
+                <div>
+                    {%- if author.facebook -%}
+                    <a href="{{ author.facebook }}" target="_blank">
+                        <img class="community-social" src="/assets/img/social/facebook-28.png">
+                    </a>
+                    {%- endif -%}
+
+                    {%- if author.telegram -%}
+                    <a href="{{ author.telegram }}" target="_blank">
+                        <img class="community-social" src="/assets/img/social/telegram-28.png">
+                    </a>
+                    {%- endif -%}
+
+                    {%- if author.github -%}
+                    <a href="https://github.com/{{ author.github }}" target="_blank">
+                        <img class="community-social-github">
+                    </a>
+                    {%- endif -%}
+
+                    {%- if author.linkedin -%}
+                    <a href="{{ author.linkedin }}" target="_blank">
+                        <img class="community-social" src="/assets/img/social/linkedin-28px.png">
+                    </a>
+                    {%- endif -%}
+
+                    {%- if author.email -%}
+                    <a href="mailto:{{ author.email }}" target="_blank">
+                        <img class="community-social" src="/assets/img/social/email.svg">
+                    </a>
+                    {%- endif -%}
+                </div>
+                <p>
+                    {{ author.bio }}
+                </p>
+            </div>
+        </div>
+        {%- endfor -%}
+    {%- endif -%}
+</div>

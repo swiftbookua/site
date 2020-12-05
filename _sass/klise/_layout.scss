@@ -431,3 +431,15 @@
     width: 28px;
     margin: 0px 0px 0px 5px;
 }
+
+body[data-theme="dark"] {
+    .community-social-github {
+        content: url("/assets/img/social/github-dark-28px.png");
+    }
+}
+
+body {
+    .community-social-github {
+        content: url("/assets/img/social/github-light-28px.png");
+    }
+}

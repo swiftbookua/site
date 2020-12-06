@@ -11,7 +11,7 @@
     <br/>
 
     Якщо ви хочете долучитись до цього блогу, надсилайте статті у форматі markdown (+ mermaid) на <a href="mailto:killobatt@gmail.com">killobatt@gmail.com</a>, 
-    чи стукайте мені в Telegram: <a href="https://t.me/killobatt">killobatt</a>.
+    чи стукайте мені в Telegram: <a href="https://t.me/killobatt" target="_blank">killobatt</a>.
   github: killobatt # github username
   twitter: http://twitter.com/killobatt # twitter username
   facebook: http://facebook.com/killobatt # facebook username  
@@ -23,7 +23,9 @@
   name: Денис Румянцев
   image: /assets/img/rmncv.jpg
   bio: >-
-    Займаюся iOS розробкою більше 6 років, наразі працюю iOS Team Lead над продуктом Hily в компанії appflame. В мене кльовий кіт)
+    Займаюся iOS розробкою з 2014 року, наразі працюю iOS Team Lead над продуктом <a href="https://apps.apple.com/us/app/hily-dating-meet-new-people/id1250946975" target="_blank">Hily</a>
+    в компанії <a href="https://appflame.com" target="_blank">appflame</a>, 
+    також виступаю на CocoaHeads Ukraine. В мене кльовий кіт)
   github: rmncv
   email: denisrumiantsev@gmail.com
   linkedin: https://www.linkedin.com/in/denys-rumiantsev-48958987/
